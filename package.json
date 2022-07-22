@@ -1,0 +1,25 @@
+{
+  "name": "planets-fact-site",
+  "version": "1.0.0",
+  "description": "![Design preview for the Planets fact site coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "data:import": "node backend/seeder.js",
+    "server": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "client": "npm start --prefix front-end",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19",
+    "sequelize": "^6.21.3"
+  }
+}
