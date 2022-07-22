@@ -28,3 +28,32 @@ exports.getAllPlanets = async (req, res) => {
     });
   }
 };
+
+/**
+ * @desc Get single planet by id
+ * @route GET /api/planets
+ */
+ exports.getSinglePlanet = async (req, res) => {
+  try {
+    const singlePlanet = await Planet.findByPk(req.params.id);
+
+    if (!singlePlanet) {
+      res.status(400).json({
+        success: false,
+        message: `No planet found`,
+      });
+    } else {
+      res.status(200).json({
+        singlePlanet,
+        success: true,
+        message: `Planet found`,
+      });
+    }
+  } catch (error) {
+    console.log(error);
+    res.status(400).json({
+      success: false,
+      message: `- Error: ${error.message}`,
+    });
+  }
+};
