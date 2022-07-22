@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: "Antonio", sans-serif;
+  background-image: url('../assets/background-stars.svg');
+  background-color: #070724;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  background-color: #070724;
+  background-image: url('../assets/background-stars.svg');
+  border-bottom: solid .5px white;
+}
+.headerLinks ul {
+  display: flex;
+  padding: 0;
+  margin-right: 2rem;
+}
+.headerLinks li {
+  list-style: none;
+  margin: 10px;
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+}
+.headerLogo{
+  margin-left: 2rem;
+  font-size: 28px;
+}
