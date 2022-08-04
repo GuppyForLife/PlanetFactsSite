@@ -1,30 +1,42 @@
 import 'animate.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import PlanetFacts from './PlanetFactsComponent';
+const data = require("../data.json");
 
 const Planet = () => {
 
-  const [planet, setPlanet] = useState("Mercury")
+  const [ planets, setPlanets ] = useState([]);
+
+  const getPlanets = async () => {
+    const res = await fetch(`http://localhost:9000/api/planets`);
+    const data = await res.json();
+    const { planets } = data;
+    setPlanets(planets);
+  }
+
+  useEffect(() => {
+    getPlanets();
+  }, []);
 
   return (
     <div>
-      <PlanetFacts />
+      {planets[0] ? <PlanetFacts planet={planets[0]} /> : <p>Loading...</p>}
       <div className="planetFactsBottom">
         <div className="planetFactsBottomBox">
             <p>ROTATION TIME</p>
-            <h2>58.6 DAYS</h2>
+            <h2></h2>
         </div>
         <div className="planetFactsBottomBox">
             <p>REVOLUTION TIME</p>
-            <h2>87.97 Days</h2>
+            <h2></h2>
         </div>
         <div className="planetFactsBottomBox">
             <p>RADIUS</p>
-            <h2>2,439.7 KM</h2>
+            <h2></h2>
         </div>
         <div className="planetFactsBottomBox">
             <p>AVERAGE TEMP.</p>
-            <h2>430&deg;C</h2>
+           <h2></h2>
         </div>
       </div>
     </div>
