@@ -1,4 +1,5 @@
 const Navbar = () => {
+
   return (
     <header className="headerStyles">
       <nav className="headerContainer">

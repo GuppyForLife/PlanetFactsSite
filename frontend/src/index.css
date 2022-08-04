@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: "Antonio", sans-serif;
-  background-image: url('./assets/background-stars.svg');
+  background-image: url("./assets/background-stars.svg");
   background-color: #070724;
   color: white;
 }
@@ -12,7 +12,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   background-color: #070724;
-  background-image: url('./assets/background-stars.svg');
+  background-image: url("./assets/background-stars.svg");
 }
 .headerLinks ul {
   display: flex;
@@ -26,12 +26,12 @@ body {
   font-weight: 600;
   font-size: 11px;
 }
-.headerLogo{
+.headerLogo {
   margin-left: 2rem;
   font-size: 28px;
 }
 
-.planetFacts{
+.planetFacts {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -40,21 +40,18 @@ body {
   margin-top: 6rem;
   margin-left: 10rem;
 }
-.planetFacts img{
-  
-}
-.planetFactsContent{
+.planetFactsContent {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 450px;
 }
-.planetFactsContent h1{
+.planetFactsContent h1 {
   font-size: 80px;
   margin: 0;
   margin-bottom: 2rem;
 }
-.planetFactsContent p{
+.planetFactsContent p {
   letter-spacing: 1px;
   word-spacing: 1px;
   margin: 0;
@@ -63,20 +60,20 @@ body {
   line-height: 150%;
   margin-bottom: 2rem;
 }
-.planetFactsLink{
+.planetFactsLink {
   color: gray;
 }
-.planetFactsLink a{
+.planetFactsLink a {
   color: gray;
   font-weight: bold;
 }
-.planetFactsButton{
+.planetFactsButton {
   background-color: rgba(255, 255, 255, 0);
   color: white;
   margin-bottom: 1.5rem;
   text-align: start;
   min-height: 50px;
-  border: solid .5px rgba(255, 255, 255, 0.583);
+  border: solid 0.5px rgba(255, 255, 255, 0.583);
   border-radius: 2px;
   cursor: pointer;
 }
@@ -85,26 +82,26 @@ body {
   font-weight: 600;
   font-size: 15px;
 }
-button:hover{
+button:hover {
   background-color: #38384f;
 }
-.spanNum{
+.spanNum {
   margin-right: 3rem;
   color: rgba(255, 255, 255, 0.75);
 }
-#active{
+#active {
   background-color: #419ebb;
 }
 
-.planetFactsBottom{
+.planetFactsBottom {
   display: flex;
   margin: 4rem 0;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.planetFactsBottomBox{
-  border: solid .5px rgba(255, 255, 255, 0.50);
+.planetFactsBottomBox {
+  border: solid 0.5px rgba(255, 255, 255, 0.5);
   width: 350px;
   height: 170px;
   display: flex;
@@ -112,16 +109,59 @@ button:hover{
   justify-content: space-evenly;
   align-items: flex-start;
 }
-.planetFactsBottom p{
+.planetFactsBottom p {
   margin: 0;
-font-family: 'Spartan';
-font-weight: 600;
-padding-left: 20px;
-color: rgba(255, 255, 255, 0.50);
+  font-family: "Spartan";
+  font-weight: 600;
+  padding-left: 20px;
+  color: rgba(255, 255, 255, 0.5);
 }
-.planetFactsBottom h2{
+.planetFactsBottom h2 {
   margin: 0;
   font-size: 40px;
   padding-left: 20px;
   padding-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+ .headerContainer{
+  flex-direction: column;
+ }
+  .headerLinks ul {
+    margin-right: 0;
+  }
+  .headerLinks li {
+    margin: 5px;
+    overflow: hidden;
+  }
+  .headerLogo {
+    margin-left: 2rem;
+    font-size: 28px;
+  }
+
+  .planetFacts{
+    margin-left: 0;
+  }
+  .planetFactsContent{
+    text-align: center;
+   margin-top: 7.5rem;
+  }
+
+  .planetFactsBottomBox {
+    width: 450px;
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .planetFactsBottom p {
+    font-size: 12px;
+  }
+  .planetFactsBottom h2 {
+    margin-top: .5rem;
+    font-size: 25px;
+    padding-right: 20px;
+  }
+  
 }
