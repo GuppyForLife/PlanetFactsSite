@@ -1,7 +1,6 @@
 import 'animate.css';
 import { useState, useEffect } from 'react';
 import PlanetFacts from './PlanetFactsComponent';
-const data = require("../data.json");
 
 const Planet = () => {
 

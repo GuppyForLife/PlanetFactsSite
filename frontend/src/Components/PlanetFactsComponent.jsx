@@ -1,11 +1,7 @@
 const PlanetFacts = ({planet}) => {
     return(
   <div className="planetFacts">
-    <img
-      className="animate__animated animate__zoomInUp"
-      src={require(`../assets/planet-mercury.svg`).default}
-      alt="Mercury"
-    />
+    <object type="image/svg+xml" data={`.${planet.imagesPlanet}`} ></object>
     <div className="planetFactsContent">
       <h1>{planet.name}</h1>
       <p>
