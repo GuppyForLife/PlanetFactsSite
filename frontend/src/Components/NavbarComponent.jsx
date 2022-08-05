@@ -16,43 +16,43 @@ const Navbar = ({ updatePlanetId }) => {
         </div>
         <div className="headerLinks">
           <ul>
-            <li>
+            <li className="mercuryNav">
               <a href="#" onClick={() => setPlanetId(1)}>
                 Mercury
               </a>
             </li>
-            <li>
-              <a href="#" onClick={() => setPlanetId(2)}>
+            <li className="venusNav">
+              <a href="#" onClick={() => setPlanetId(2)} >
                 Venus
               </a>
             </li>
-            <li>
-              <a href="#" onClick={() => setPlanetId(3)}>
+            <li className="earthNav">
+              <a href="#" onClick={() => setPlanetId(3)} >
                 Earth
               </a>
             </li>
-            <li>
-              <a href="#" onClick={() => setPlanetId(4)}>
+            <li className="marsNav">
+              <a href="#" onClick={() => setPlanetId(4)} >
                 Mars
               </a>
             </li>
-            <li>
-              <a href="#" onClick={() => setPlanetId(5)}>
+            <li className="jupiterNav">
+              <a href="#" onClick={() => setPlanetId(5)} >
                 Jupiter
               </a>
             </li>
-            <li>
-              <a href="#" onClick={() => setPlanetId(6)}>
+            <li className="saturnNav">
+              <a href="#" onClick={() => setPlanetId(6)} >
                 Saturn
               </a>
             </li>
-            <li>
-              <a href="#" onClick={() => setPlanetId(7)}>
+            <li className="uranusNav">
+              <a href="#" onClick={() => setPlanetId(7)} >
                 Uranus
               </a>
             </li>
-            <li>
-              <a href="#" onClick={() => setPlanetId(8)}>
+            <li className="neptuneNav">
+              <a href="#" onClick={() => setPlanetId(8)} >
                 Neptune
               </a>
             </li>

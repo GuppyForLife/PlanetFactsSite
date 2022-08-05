@@ -1,6 +1,8 @@
 const PlanetFacts = ({ planet }) => {
+  
+
   return (
-    <div>
+    <div className="animate__animated animate__zoomInUp">
       <div className="planetFacts">
         <object type="image/svg+xml" data={`.${planet.imagesPlanet}`}></object>
         <div className="planetFactsContent">

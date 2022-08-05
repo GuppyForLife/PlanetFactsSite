@@ -34,6 +34,31 @@ body {
   color: inherit;
   font-size: 13px;
 }
+.mercuryNav :hover{
+  color: #419ebb;
+}
+.venusNav :hover{
+  color: #EDA249;
+}
+.earthNav :hover{
+  color: #6F2ED6;
+}
+.marsNav :hover{
+  color: #D14C32;
+}
+.jupiterNav :hover{
+  color: #D83A34;
+}
+.saturnNav :hover{
+  color: #CD5120;
+}
+.uranusNav :hover{
+  color: #1EC2A4;
+}
+.neptuneNav :hover{
+  color: #2D68F0;
+}
+
 
 .planetFacts {
   display: flex;
