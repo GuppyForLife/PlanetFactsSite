@@ -24,11 +24,15 @@ body {
   margin: 10px;
   font-family: "Spartan", sans-serif;
   font-weight: 600;
-  font-size: 11px;
 }
 .headerLogo {
   margin-left: 2rem;
   font-size: 28px;
+}
+.headerLinks li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
 }
 
 .planetFacts {
