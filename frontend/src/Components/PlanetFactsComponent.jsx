@@ -29,11 +29,11 @@ const PlanetFacts = ({ planet }) => {
 
   useEffect(() => {
     handleState();
-  }, [active])
+  }, [active, planet])
 
   
   return (
-    <div className="animate__animated animate__zoomInUp">
+    <div>
       <div className="planetFacts">
         <object type="image/svg+xml" data={`.${image}`}></object>
         <div className="planetFactsContent">
