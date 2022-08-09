@@ -23,6 +23,7 @@
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.19",
     "react-animated-css": "^1.2.1",
+    "react-loading": "^2.0.3",
     "sequelize": "^6.21.3"
   }
 }

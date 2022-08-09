@@ -13,7 +13,8 @@
     "temperature": "430°c",
     "imagesPlanet": "./assets/planet-mercury.svg",
     "imagesInternal": "./assets/planet-mercury-internal.svg",
-    "imagesGeology": "./assets/geology-mercury.png"
+    "imagesGeology": "./assets/geology-mercury.png",
+    "color" : "#419EBB"
   },
   {
     "name": "Venus",
@@ -29,7 +30,8 @@
     "temperature": "471°c",
     "imagesPlanet": "./assets/planet-venus.svg",
     "imagesInternal": "./assets/planet-venus-internal.svg",
-    "imagesGeology": "./assets/geology-venus.png"
+    "imagesGeology": "./assets/geology-venus.png",
+    "color" : "#EDA249"
   },
   {
     "name": "Earth",
@@ -45,7 +47,8 @@
     "temperature": "16°c",
     "imagesPlanet": "./assets/planet-earth.svg",
     "imagesInternal": "./assets/planet-earth-internal.svg",
-    "imagesGeology": "./assets/geology-earth.png"
+    "imagesGeology": "./assets/geology-earth.png",
+    "color" : "#6F2ED6"
   },
   {
     "name": "Mars",
@@ -61,7 +64,8 @@
     "temperature": "-28°c",
     "imagesPlanet": "./assets/planet-mars.svg",
     "imagesInternal": "./assets/planet-mars-internal.svg",
-    "imagesGeology": "./assets/planet-mars.svg"
+    "imagesGeology": "./assets/planet-mars.svg",
+    "color" : "#D14C32"
   },
   {
     "name": "Jupiter",
@@ -77,7 +81,8 @@
     "temperature": "-108°c",
     "imagesPlanet": "./assets/planet-jupiter.svg",
     "imagesInternal": "./assets/planet-jupiter-internal.svg",
-    "imagesGeology": "./assets/geology-jupiter.png"
+    "imagesGeology": "./assets/geology-jupiter.png",
+    "color" : "#D83A34"
   },
   {
     "name": "Saturn",
@@ -93,7 +98,8 @@
     "temperature": "-138°c",
     "imagesPlanet": "./assets/planet-saturn.svg",
     "imagesInternal": "./assets/planet-saturn-internal.svg",
-    "imagesGeology": "./assets/geology-saturn.png"
+    "imagesGeology": "./assets/geology-saturn.png",
+    "color" : "#CD5210"
   },
   {
     "name": "Uranus",
@@ -109,7 +115,8 @@
     "temperature": "-195°c",
     "imagesPlanet": "./assets/planet-uranus.svg",
     "imagesInternal": "./assets/planet-uranus-internal.svg",
-    "imagesGeology": "./assets/geology-uranus.png"
+    "imagesGeology": "./assets/geology-uranus.png",
+    "color" : "#1EC2A4"
   },
   {
     "name": "Neptune",
@@ -125,6 +132,7 @@
     "temperature": "-201°c",
     "imagesPlanet": "./assets/planet-neptune.svg",
     "imagesInternal": "./assets/planet-neptune-internal.svg",
-    "imagesGeology": "./assets/geology-neptune.png"
+    "imagesGeology": "./assets/geology-neptune.png",
+    "color" : "#2D68F0"
   }
 ]

@@ -1,4 +1,4 @@
-import 'animate.css';
+import ReactLoading from 'react-loading';
 import { useState, useEffect } from 'react';
 import PlanetFacts from './PlanetFactsComponent';
 
@@ -18,7 +18,7 @@ const Planet = ({planet}) => {
 
   return (
     <div>
-      {planetInfo.singlePlanet ? <PlanetFacts planet={planetInfo.singlePlanet}/>: <p>Loading...</p>}
+      {planetInfo.singlePlanet ? <PlanetFacts planet={planetInfo.singlePlanet}/>: <div className='loader' ><ReactLoading type="spin"/><h2>Planets Incoming...</h2></div>}
     </div>
   );
 };

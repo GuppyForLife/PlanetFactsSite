@@ -32,27 +32,27 @@ const Navbar = ({ updatePlanetId }) => {
               </a>
             </li>
             <li className="marsNav">
-              <a href="#" onClick={() => setPlanetId(4)} >
+              <a href="#" onClick={() => setPlanetId(8)} >
                 Mars
               </a>
             </li>
             <li className="jupiterNav">
-              <a href="#" onClick={() => setPlanetId(5)} >
+              <a href="#" onClick={() => setPlanetId(7)} >
                 Jupiter
               </a>
             </li>
             <li className="saturnNav">
-              <a href="#" onClick={() => setPlanetId(6)} >
+              <a href="#" onClick={() => setPlanetId(5)} >
                 Saturn
               </a>
             </li>
             <li className="uranusNav">
-              <a href="#" onClick={() => setPlanetId(7)} >
+              <a href="#" onClick={() => setPlanetId(4)} >
                 Uranus
               </a>
             </li>
             <li className="neptuneNav">
-              <a href="#" onClick={() => setPlanetId(8)} >
+              <a href="#" onClick={() => setPlanetId(6)} >
                 Neptune
               </a>
             </li>
