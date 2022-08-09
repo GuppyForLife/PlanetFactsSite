@@ -15,7 +15,8 @@ const Planet = sequelize.define('planet' , {
     temperature: Sequelize.STRING,
     imagesPlanet: Sequelize.STRING,
     imagesInternal: Sequelize.STRING,
-    imagesGeology: Sequelize.STRING
+    imagesGeology: Sequelize.STRING,
+    color: Sequelize.STRING
 });
 
 module.exports = Planet;

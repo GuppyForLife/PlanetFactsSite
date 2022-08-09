@@ -119,8 +119,8 @@ button:hover {
   margin-right: 3rem;
   color: rgba(255, 255, 255, 0.75);
 }
-#active {
-  background-color: #419ebb;
+object {
+  max-width: 80%;
 }
 
 

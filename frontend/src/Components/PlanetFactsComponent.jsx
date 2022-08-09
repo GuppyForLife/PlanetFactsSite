@@ -1,14 +1,13 @@
 import { useState, useEffect } from "react";
 
 const PlanetFacts = ({ planet }) => {
-
-  const [text, setText] = useState('');
-  const [image, setImage] = useState('');
-  const [link, setLink] = useState('');
+  const [text, setText] = useState("");
+  const [image, setImage] = useState("");
+  const [link, setLink] = useState("");
   const [active, setActive] = useState(0);
 
   const handleState = () => {
-    switch(active){
+    switch (active) {
       case 1:
         setText(planet.structureContent);
         setLink(planet.structureSource);
@@ -25,17 +24,16 @@ const PlanetFacts = ({ planet }) => {
         setImage(planet.imagesPlanet);
         break;
     }
-  }
+  };
 
   useEffect(() => {
     handleState();
-  }, [active, planet])
+  }, [active, planet]);
 
-  
   return (
     <div>
       <div className="planetFacts">
-        <object type="image/svg+xml" data={`.${image}`}></object>
+        <object type="image/png" data={`.${image}`}></object>
         <div className="planetFactsContent">
           <h1>{planet.name}</h1>
           <p>{text}</p>
@@ -45,15 +43,27 @@ const PlanetFacts = ({ planet }) => {
               Wikipedia
             </a>
           </p>
-          <button className="planetFactsButton" id={active === 0 ? "active" : ""} onClick={() => setActive(0)} >
+          <button
+            className="planetFactsButton"
+            style={active === 0 ? { backgroundColor: `${planet.color}` } : {}}
+            onClick={() => setActive(0)}
+          >
             <span className="spanNum">01</span>
             <span>Overview</span>
           </button>
-          <button className="planetFactsButton" onClick={() => setActive(1)} id={active === 1 ? "active" : ""}>
+          <button
+            className="planetFactsButton"
+            onClick={() => setActive(1)}
+            style={active === 1 ? { backgroundColor: `${planet.color}` } : {}}
+          >
             <span className="spanNum">02</span>
             <span>Internal Structure</span>
           </button>
-          <button className="planetFactsButton" onClick={() => setActive(2)} id={active === 2 ? "active" : ""}>
+          <button
+            className="planetFactsButton"
+            onClick={() => setActive(2)}
+            style={active === 2 ? { backgroundColor: `${planet.color}` } : {}}
+          >
             <span className="spanNum">03</span>
             <span>Surface Geology</span>
           </button>
@@ -61,20 +71,20 @@ const PlanetFacts = ({ planet }) => {
       </div>
       <div className="planetFactsBottom">
         <div className="planetFactsBottomBox">
-            <p>ROTATION TIME</p>
-            <h2>{ planet.rotation }</h2>
+          <p>ROTATION TIME</p>
+          <h2>{planet.rotation}</h2>
         </div>
         <div className="planetFactsBottomBox">
-            <p>REVOLUTION TIME</p>
-            <h2>{ planet.revolution }</h2>
+          <p>REVOLUTION TIME</p>
+          <h2>{planet.revolution}</h2>
         </div>
         <div className="planetFactsBottomBox">
-            <p>RADIUS</p>
-            <h2>{ planet.radius }</h2>
+          <p>RADIUS</p>
+          <h2>{planet.radius}</h2>
         </div>
         <div className="planetFactsBottomBox">
-            <p>AVERAGE TEMP.</p>
-           <h2>{ planet.temperature }</h2>
+          <p>AVERAGE TEMP.</p>
+          <h2>{planet.temperature}</h2>
         </div>
       </div>
     </div>
