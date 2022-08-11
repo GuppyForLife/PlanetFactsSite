@@ -8,16 +8,15 @@ import { useState } from "react";
 import Planet from "./Components/PlanetComponent";
 
 function App() {
-  
   const [planetId, setPlanetID] = useState(1);
 
   const updatePlanetId = (id) => {
     setPlanetID(id);
-  }
+  };
 
   return (
     <div>
-      <Navbar updatePlanetId={updatePlanetId}/>
+      <Navbar updatePlanetId={updatePlanetId} />
       <Planet planet={planetId} />
     </div>
   );

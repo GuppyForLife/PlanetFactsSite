@@ -7,7 +7,7 @@ const Planet = ({planet}) => {
   const [ planetInfo, setPlanetInfo] = useState([]);
 
   const getPlanetInfo = async () => {
-    const res = await fetch(`http://localhost:9000/api/planets/${planet}`);
+    const res = await fetch(`http://localhost:8888/api/planets/${planet}`);
     const data = await res.json();
     setPlanetInfo(data);
   }
@@ -18,7 +18,7 @@ const Planet = ({planet}) => {
 
   return (
     <div>
-      {planetInfo.singlePlanet ? <PlanetFacts planet={planetInfo.singlePlanet}/>: <div className='loader' ><ReactLoading type="spin"/><h2>Planets Incoming...</h2></div>}
+      {planetInfo.id ? <PlanetFacts planet={planetInfo}/>: <div className='loader' ><ReactLoading type="spin"/><h2>Planets Incoming...</h2></div>}
     </div>
   );
 };

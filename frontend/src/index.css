@@ -158,8 +158,9 @@ object {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 25%;
+  margin-top: 20%;
 }
+
 
 @media (max-width: 767px) {
  .headerContainer{
